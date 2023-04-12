@@ -8,8 +8,8 @@ Console.WriteLine("======================================");
 try
 {
 	Console.WriteLine(new Date(2024, 2, 29));
-	Console.WriteLine(new Date(2023, 2, 2));
-	Console.WriteLine(new Date(2023, 11, 31));
+	Console.WriteLine(new Date(2023, 1, 2));
+	Console.WriteLine(new Date(2023, 12, 31));
 }
 catch (Exception error)
 {

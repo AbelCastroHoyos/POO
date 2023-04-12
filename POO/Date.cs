@@ -26,7 +26,8 @@
                 return day;
             }
 
-            throw new DayException($"Ivalid day {day}");
+            //throw new DayException($"Ivalid day {day}");
+            throw new MonthException($"Ivalid day {day}"); 
         }
 
         private bool IsLeapYear(int year)
