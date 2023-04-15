@@ -4,16 +4,27 @@ using POO;
 Console.WriteLine("Hola Programación orientada a objetos!");
 Console.WriteLine("======================================");
 
+Employee employee1 = new SalaryEmployee()
+{   Id = 1010,
+    FirstName = "Sandra",
+    LastName = "Morales",
+    BirthDate = new Date(1990, 5, 23),
+    HiringDate = new Date(2022, 1, 15),
+    IsActive = true,
+    Salary = 1814256.45M
+};
 
-try
+Employee employee2 = new CommissionEmployee()
 {
-	Console.WriteLine(new Date(2024, 2, 29));
-	Console.WriteLine(new Date(2023, 1, 2));
-	Console.WriteLine(new Date(2023, 12, 31));
-}
-catch (Exception error)
-{
+    Id = 1012,
+    FirstName = "Nataly",
+    LastName = "Giraldo",
+    BirthDate = new Date(1986, 11, 22),
+    HiringDate = new Date(2022, 8, 11),
+    IsActive = true,
+    Sales = 320000000M,
+    CommissionPercentaje = 0.03F,
+};
 
-	Console.WriteLine(error.Message);
-}
-
+Console.WriteLine(employee1);
+Console.WriteLine(employee2);
